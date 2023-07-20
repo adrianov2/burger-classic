@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Burg Classic</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Burg Classic</h1>
+      <nav>
+        <ul>
+          <li><a href="#menu">Hambúrgueres</a></li>
+          <li><a href="#menu">Sanduíches</a></li>
+          <li><a href="#menu">Batatas Fritas</a></li>
+          <li><a href="#menu">Refrigerantes</a></li>
+          <li><a href="#menu">Pizza</a></li>
+          <li><a href="#menu">Sobremesas</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section id="banner">
+    <img src="./img/banner.jpg" alt="Banner Lanchonete Delícia">
+    <div class="banner-content">
+      <div class="container">
+        <h2>Deliciosos lanches para todos os gostos!</h2>
+        <a href="#menu" class="btn btn-primary">Veja nosso cardápio</a>
+      </div>
+    </div>
+  </section>
+  
+  <section id="menu">
+    <div class="container">
+      <h2>Cardápio</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="./img/ha.jpg" alt="Hambúrguer">
+          <div class="menu-item-details">
+            <h3>Hambúrguer</h3>
+            <p class="description">Delicioso hambúrguer caseiro com acompanhamentos.</p>
+            <p class="price">R$10,00</p>
+            <a data-modal="modal-pedido" class="btn btn-order open-modal">Faça seu pedido</a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="./img/san.jpg" alt="Sanduíche">
+          <div class="menu-item-details">
+            <h3>Sanduíche</h3>
+            <p class="description">Sanduíche fresquinho com ingredientes selecionados.</p>
+            <p class="price">R$8,00</p>
+            <a data-modal="modal-pedido" class="btn btn-order open-modal">Faça seu pedido</a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="./img/batata.jpg" alt="Batata Frita">
+          <div class="menu-item-details">
+            <h3>Batata Frita</h3>
+            <p class="description">Porção generosa de batatas fritas crocantes.</p>
+            <p class="price">R$5,00</p>
+            <a data-modal="modal-pedido" class="btn btn-order open-modal">Faça seu pedido</a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="./img/refri.jpg" alt="Refrigerante">
+          <div class="menu-item-details">
+            <h3>Refrigerante</h3>
+            <p class="description">Bebida refrescante em diversas opções de sabores.</p>
+            <p class="price">R$3,00</p>
+            <a data-modal="modal-pedido" class="btn btn-order open-modal">Faça seu pedido</a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="./img/ha2.jpg" alt="Pizza">
+          <div class="menu-item-details">
+            <h3>Pizza</h3>
+            <p class="description">Saborosas pizzas artesanais com ingredientes frescos.</p>
+            <p class="price">R$15,00</p>
+            <a data-modal="modal-pedido" class="btn btn-order open-modal">Faça seu pedido</a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="./img/refri2.jpg" alt="Sobremesa">
+          <div class="menu-item-details">
+            <h3>Sobremesa</h3>
+            <p class="description">Deliciosas sobremesas para adoçar o seu paladar.</p>
+            <p class="price">R$7,00</p>
+            <a data-modal="modal-pedido" class="btn btn-order open-modal">Faça seu pedido</a>
+          </div>
+        </div>
+        
+        <!-- Adicione mais itens do menu aqui -->
+        <div class="menu-item">
+          <img src="./img/san2.jpg" alt="Batata Frita">
+          <div class="menu-item-details">
+            <h3>Batata Rústica</h3>
+            <p class="description">Batatas rústicas temperadas e crocantes.</p>
+            <p class="price">R$6,00</p>
+            <a data-modal="modal-pedido" class="btn btn-order open-modal">Faça seu pedido</a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="./img/batata2.jpg" alt="Bebida">
+          <div class="menu-item-details">
+            <h3>Bebidas Especiais</h3>
+            <p class="description">Bebidas refrescantes com ingredientes especiais.</p>
+            <p class="price">R$4,00</p>
+            <a data-modal="modal-pedido" class="btn btn-order open-modal">Faça seu pedido</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <p>Entre em contato conosco para fazer seu pedido:</p>
+      <p>Telefone: (11) 1234-5678</p>
+      <p>Email: contato@lanchonetedelicia.com</p>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+  
+  <footer>
+    <div class="container">
+      <p>&copy; Burg Classic. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <script>
+    // Função para redirecionar para a página de pagamento
+    function redirecionarParaPagamento() {
+      window.location.href = "pagina_de_pagamento.html";
+    }
+  
+    // Obtém todos os elementos com a classe "open-modal"
+    var openModalButtons = document.getElementsByClassName("open-modal");
+  
+    // Adiciona o evento de clique a cada botão
+    for (var i = 0; i < openModalButtons.length; i++) {
+      openModalButtons[i].addEventListener("click", redirecionarParaPagamento);
+    }
+  </script>
+  
+</body>
+</html>
